@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('./images/background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .hero-content h1 {
+            color: var(--white);
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .typing-text {
+            color: var(--light-slate);
+        }
+        
+        .dynamic-text {
+            color: var(--primary-color);
+        }
+
+        section h2 {
+            color: var(--white);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 3rem;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            width: 50%;
+            height: 2px;
+            background: var(--primary-color);
+            transform: translateX(-50%) scaleX(0.6);
+            transition: transform 0.3s ease;
+        }
+
+        section h2:hover::after {
+            transform: translateX(-50%) scaleX(0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="./images/profile.jpg" alt="Jeel B. Savaliya" class="home-profile-image">
+                </div>
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1>Jeel B. Savaliya</h1>
+                    <p class="typing-text">I'm a <span class="dynamic-text"></span></p>
+                    <div class="hero-description">
+                        <p>A passionate Web Developer and Computer Science student at Vishwakarma Government Engineering College, creating innovative web solutions and solving complex programming challenges.</p>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <p>CGPA 9.00</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-code"></i>
+                            <p>Web Developer</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-brain"></i>
+                            <p>DSA</p>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="primary-btn">Get In Touch</a>
+                        <a href="#projects" class="secondary-btn">View Projects</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/ZeelSavaliya455" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jeel-b-savaliya-43a358283" target="_blank" class="linkedin-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/zeel.savaliya.45" target="_blank" class="instagram-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a Computer Science student at Vishwakarma Government Engineering College, currently pursuing my education in Ahmedabad. Originally from Surat, I have a strong passion for web development, problem-solving, and continuously learning new technologies.</p>
+                <p>With a solid foundation in Data Structures and Algorithms, I enjoy creating efficient solutions and building modern web applications. My goal is to combine technical expertise with creative problem-solving to develop impactful digital solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-java"></i>
+                <h3>Java</h3>
+                <p>Primary Programming Language</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>DSA</h3>
+                <p>Data Structures & Algorithms</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Web Development</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <p>Web Styling</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Web Interactivity</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <p>Programming & Scripting</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Achievements -->
+    <section id="academics" class="academics">
+        <h2>Academic Achievements</h2>
+        <div class="achievements-content">
+            <div class="achievement-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Academic Excellence</h3>
+                <p>Current CGPA: 9.00</p>
+                <p>Vishwakarma Government Engineering College</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>A web application that displays real-time weather information for different cities and states. Users can search for locations and view detailed weather data.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 97262 40934</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Surat & Ahmedabad, Gujarat, India</p>
+                </div>
+                <div class="contact-social">
+                    <a href="https://github.com/ZeelSavaliya455" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jeel-b-savaliya-43a358283" target="_blank" class="linkedin-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/zeel.savaliya.45" target="_blank" class="instagram-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jeel B. Savaliya. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
